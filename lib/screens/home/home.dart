@@ -47,7 +47,9 @@ class HomePage extends ConsumerWidget {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.counter);
+                },
                 child: const Text("Counter"),
               ),
               const SizedBox(height: 20),
