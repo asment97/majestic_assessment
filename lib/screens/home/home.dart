@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:majestic_assessment/core/providers/app_provider.dart';
 import 'package:majestic_assessment/core/providers/auth_provider.dart';
 
 class HomePage extends ConsumerWidget {
@@ -28,6 +29,7 @@ class HomePage extends ConsumerWidget {
         padding: const EdgeInsets.all(30.0),
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
                 "Welcome, $username",
@@ -35,6 +37,28 @@ class HomePage extends ConsumerWidget {
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
                 ),
+              ),
+              const SizedBox(height: 30),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.posts);
+                },
+                child: const Text("Posts List"),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text("Counter"),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text("Camera"),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text("Factorial Number"),
               ),
             ],
           ),
