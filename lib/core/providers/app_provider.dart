@@ -3,6 +3,7 @@ import 'package:majestic_assessment/screens/anagram/anagram.dart';
 import 'package:majestic_assessment/screens/auth/login.dart';
 import 'package:majestic_assessment/screens/camera/camera.dart';
 import 'package:majestic_assessment/screens/counter/counter.dart';
+import 'package:majestic_assessment/screens/fibonacci/fibonacci.dart';
 import 'package:majestic_assessment/screens/home/home.dart';
 import 'package:majestic_assessment/screens/initial/initial.dart';
 import 'package:majestic_assessment/screens/numbers/numbers.dart';
@@ -46,6 +47,10 @@ Map<String, PageRoute<dynamic> Function(Object)> routes = {
         settings: const RouteSettings(name: Routes.anagram),
         builder: (context) => const AnagramPage(),
       ),
+  Routes.fibonacci: (Object params) => MaterialPageRoute(
+        settings: const RouteSettings(name: Routes.fibonacci),
+        builder: (context) => const FibonacciPage(),
+      ),
 };
 
 class Routes {
@@ -61,4 +66,5 @@ class Routes {
   static const palindrome = '/palindrome';
   static const numbers = '/numbers';
   static const anagram = '/anagram';
+  static const fibonacci = '/fibonacci';
 }

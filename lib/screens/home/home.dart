@@ -87,6 +87,13 @@ class HomePage extends ConsumerWidget {
                 },
                 child: const Text("Anagram"),
               ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.fibonacci);
+                },
+                child: const Text("Fibonacci"),
+              ),
             ],
           ),
         ),
