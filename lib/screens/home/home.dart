@@ -61,7 +61,9 @@ class HomePage extends ConsumerWidget {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.factorial);
+                },
                 child: const Text("Factorial Number"),
               ),
             ],
