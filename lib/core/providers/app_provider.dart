@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:majestic_assessment/screens/auth/login.dart';
+import 'package:majestic_assessment/screens/camera/camera.dart';
 import 'package:majestic_assessment/screens/counter/counter.dart';
 import 'package:majestic_assessment/screens/home/home.dart';
 import 'package:majestic_assessment/screens/initial/initial.dart';
@@ -26,6 +27,10 @@ Map<String, PageRoute<dynamic> Function(Object)> routes = {
         settings: const RouteSettings(name: Routes.counter),
         builder: (context) => const CounterPage(),
       ),
+  Routes.camera: (Object params) => MaterialPageRoute(
+        settings: const RouteSettings(name: Routes.camera),
+        builder: (context) => const CameraPage(),
+      ),
 };
 
 class Routes {
@@ -36,4 +41,5 @@ class Routes {
   static const home = '/home';
   static const posts = '/posts';
   static const counter = '/counter';
+  static const camera = '/camera';
 }

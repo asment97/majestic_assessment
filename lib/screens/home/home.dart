@@ -54,7 +54,9 @@ class HomePage extends ConsumerWidget {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.camera);
+                },
                 child: const Text("Camera"),
               ),
               const SizedBox(height: 20),
