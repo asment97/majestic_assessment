@@ -32,6 +32,7 @@ class AuthProvider extends StateNotifier<String?> {
 
   Future<bool> login() async {
     if (username.isNotEmpty && password.isNotEmpty) {
+      state = username;
       await storage.write(key: "username", value: username);
       return true;
     }
