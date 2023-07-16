@@ -73,6 +73,13 @@ class HomePage extends ConsumerWidget {
                 },
                 child: const Text("Palindrome"),
               ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.numbers);
+                },
+                child: const Text("Numbers"),
+              ),
             ],
           ),
         ),

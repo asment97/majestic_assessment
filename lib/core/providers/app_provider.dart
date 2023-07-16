@@ -4,6 +4,7 @@ import 'package:majestic_assessment/screens/camera/camera.dart';
 import 'package:majestic_assessment/screens/counter/counter.dart';
 import 'package:majestic_assessment/screens/home/home.dart';
 import 'package:majestic_assessment/screens/initial/initial.dart';
+import 'package:majestic_assessment/screens/numbers/numbers.dart';
 import 'package:majestic_assessment/screens/palindrome/palindrome.dart';
 import 'package:majestic_assessment/screens/posts/posts_page.dart';
 
@@ -36,6 +37,10 @@ Map<String, PageRoute<dynamic> Function(Object)> routes = {
         settings: const RouteSettings(name: Routes.palindrome),
         builder: (context) => const PalindromePage(),
       ),
+  Routes.numbers: (Object params) => MaterialPageRoute(
+        settings: const RouteSettings(name: Routes.numbers),
+        builder: (context) => const NumbersPage(),
+      ),
 };
 
 class Routes {
@@ -49,4 +54,5 @@ class Routes {
   static const camera = '/camera';
   static const factorial = '/factorial';
   static const palindrome = '/palindrome';
+  static const numbers = '/numbers';
 }
