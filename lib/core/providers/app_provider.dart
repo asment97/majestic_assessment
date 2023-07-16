@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:majestic_assessment/screens/anagram/anagram.dart';
 import 'package:majestic_assessment/screens/auth/login.dart';
 import 'package:majestic_assessment/screens/camera/camera.dart';
 import 'package:majestic_assessment/screens/counter/counter.dart';
@@ -41,6 +42,10 @@ Map<String, PageRoute<dynamic> Function(Object)> routes = {
         settings: const RouteSettings(name: Routes.numbers),
         builder: (context) => const NumbersPage(),
       ),
+  Routes.anagram: (Object params) => MaterialPageRoute(
+        settings: const RouteSettings(name: Routes.anagram),
+        builder: (context) => const AnagramPage(),
+      ),
 };
 
 class Routes {
@@ -55,4 +60,5 @@ class Routes {
   static const factorial = '/factorial';
   static const palindrome = '/palindrome';
   static const numbers = '/numbers';
+  static const anagram = '/anagram';
 }

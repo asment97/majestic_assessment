@@ -80,6 +80,13 @@ class HomePage extends ConsumerWidget {
                 },
                 child: const Text("Numbers"),
               ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.anagram);
+                },
+                child: const Text("Anagram"),
+              ),
             ],
           ),
         ),
