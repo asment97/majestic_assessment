@@ -66,6 +66,13 @@ class HomePage extends ConsumerWidget {
                 },
                 child: const Text("Factorial Number"),
               ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.palindrome);
+                },
+                child: const Text("Palindrome"),
+              ),
             ],
           ),
         ),

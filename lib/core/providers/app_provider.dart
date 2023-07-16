@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:majestic_assessment/screens/auth/login.dart';
 import 'package:majestic_assessment/screens/camera/camera.dart';
 import 'package:majestic_assessment/screens/counter/counter.dart';
-import 'package:majestic_assessment/screens/factorial/factorial.dart';
 import 'package:majestic_assessment/screens/home/home.dart';
 import 'package:majestic_assessment/screens/initial/initial.dart';
+import 'package:majestic_assessment/screens/palindrome/palindrome.dart';
 import 'package:majestic_assessment/screens/posts/posts_page.dart';
 
 Map<String, PageRoute<dynamic> Function(Object)> routes = {
@@ -32,9 +32,9 @@ Map<String, PageRoute<dynamic> Function(Object)> routes = {
         settings: const RouteSettings(name: Routes.camera),
         builder: (context) => const CameraPage(),
       ),
-  Routes.factorial: (Object params) => MaterialPageRoute(
-        settings: const RouteSettings(name: Routes.factorial),
-        builder: (context) => const FactorialPage(),
+  Routes.palindrome: (Object params) => MaterialPageRoute(
+        settings: const RouteSettings(name: Routes.palindrome),
+        builder: (context) => const PalindromePage(),
       ),
 };
 
@@ -48,4 +48,5 @@ class Routes {
   static const counter = '/counter';
   static const camera = '/camera';
   static const factorial = '/factorial';
+  static const palindrome = '/palindrome';
 }
